@@ -41,3 +41,29 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.tlog
+*.obj
+Win32/.svn/entries
+*.svn-base
+Win32/.svn/all-wcprops
+Sounds/.svn/all-wcprops
+Sounds/.svn/entries
+*.pdb
+*.lastbuildstate
+Release/Vajra.log
+Release/Vajra.Build.CppClean.log
+pugixml/.svn/entries
+pugixml/.svn/all-wcprops
+OpenGL/.svn/all-wcprops
+OpenGL/.svn/entries
+Fmod/.svn/all-wcprops
+Fmod/.svn/entries
+Debug/Vajra_d.Build.CppClean.log
+*.unsuccessfulbuild
+*.svn-work
+.svn/all-wcprops
+.svn/dir-prop-base
+.svn/entries
+Debug/Vajra.log
+DirectX/.svn/all-wcprops
+DirectX/.svn/entries

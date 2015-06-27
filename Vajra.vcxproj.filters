@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{f54c0dcc-e541-4a0f-9714-d954b5adcde8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Application">
+      <UniqueIdentifier>{600e5579-a1da-49ad-ab23-1a0ab1b5eaca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Application\Win32">
+      <UniqueIdentifier>{923fe4a9-0e66-4fe1-b304-90a945bce25a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Resource">
+      <UniqueIdentifier>{4bbe7689-a17c-4038-a1f3-33e2e97daa67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Timing">
+      <UniqueIdentifier>{809b54f5-193a-4333-b196-c15a2c2050cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Timing\Win32">
+      <UniqueIdentifier>{1cfabfc1-c174-4c18-86c1-5af82ce8984e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Logging">
+      <UniqueIdentifier>{058f25ae-dd17-4456-9261-7a2e96de1944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Logging\Win32">
+      <UniqueIdentifier>{24b2ea30-0ce4-4147-a392-accbd5935cd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Memory">
+      <UniqueIdentifier>{2146bf66-87b4-45cf-afea-4c01901b6342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{17464ac0-8494-4da1-aab9-f8f76ec11713}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Camera">
+      <UniqueIdentifier>{7ef490ca-df82-4ac1-85de-2760aa9b789f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Camera\D3D">
+      <UniqueIdentifier>{1733717b-c120-4e34-97bd-3e50ce3fadb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Camera\OGL">
+      <UniqueIdentifier>{31565810-8324-4d10-87c0-8e8c179bf11d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Interfaces">
+      <UniqueIdentifier>{9c3505a2-0216-4622-af19-addfc6bcda5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Texture">
+      <UniqueIdentifier>{4f822383-0390-47dd-a546-3c0fb9847a4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Texture\OGL">
+      <UniqueIdentifier>{a451ca86-83f5-43e6-bb4e-b87ee7c3c86d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Texture\D3D">
+      <UniqueIdentifier>{7777337c-a436-41a0-8fbe-d38251436e82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Renderer">
+      <UniqueIdentifier>{d3878999-923c-4dba-af38-e650ca1a44ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Renderer\D3D">
+      <UniqueIdentifier>{a881f6a3-aed7-4f24-bf58-3d6f412f0106}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Renderer\OGL">
+      <UniqueIdentifier>{3b91fb3b-c854-48c6-a395-11f60522138a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{0f89cb96-9f92-4bc3-8e00-a59d988f4c99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Win32">
+      <UniqueIdentifier>{ff7907c1-29b2-4764-a495-683dd39fa617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threads">
+      <UniqueIdentifier>{c8dfcfc4-ecfb-429c-9201-0022e35646c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{ff8c831c-6cc9-488e-8579-c3f764585b5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets">
+      <UniqueIdentifier>{7acbe035-a0a6-40a1-b513-b9cd56fe46e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation">
+      <UniqueIdentifier>{75af960a-ea60-46f8-9909-afdf0e06c65c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{3e20cbbb-d393-4ac5-9df4-c060b9770bd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Video">
+      <UniqueIdentifier>{33098353-1020-422a-a6e2-e17248d66283}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{e9bf4a28-9caa-41f6-ad4f-ddb423d0af7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{866fe799-359b-45f7-a4f6-e64f207ddcfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{4831371a-0da6-4046-a51e-e34ffd6dca90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound\Fmod">
+      <UniqueIdentifier>{01e2c23d-0a34-4d24-9cc3-368c0c01ee3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound\Sounds">
+      <UniqueIdentifier>{e784fe79-a403-47e2-bbca-7c3f3acf65d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Video\Win32">
+      <UniqueIdentifier>{27fd0d9e-0902-4c50-b44c-440b87e86820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Events">
+      <UniqueIdentifier>{e175f768-23d6-42de-acb4-a694c75dd5ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pugixml">
+      <UniqueIdentifier>{0905900f-0c11-4feb-b5e5-241bac7ef5e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Utilities">
+      <UniqueIdentifier>{34ef31b7-8498-4ad0-8d33-5441a70790f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Device">
+      <UniqueIdentifier>{b6e57831-b6a1-4048-a42d-c08299721ab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Device\DirectX">
+      <UniqueIdentifier>{d840c3da-be36-4481-ae4c-c77f83cfdbea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Definitions.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.hpp">
+      <Filter>Core\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\Win32Application.hpp">
+      <Filter>Core\Application\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="IdManager.hpp">
+      <Filter>Core\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.hpp">
+      <Filter>Core\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Clock.hpp">
+      <Filter>Core\Timing</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.hpp">
+      <Filter>Core\Timing</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.hpp">
+      <Filter>Core\Timing</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\Win32Clock.hpp">
+      <Filter>Core\Timing\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\Win32Timer.hpp">
+      <Filter>Core\Timing\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.hpp">
+      <Filter>Core\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManager.hpp">
+      <Filter>Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.hpp">
+      <Filter>Graphics\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\D3DCamera.hpp">
+      <Filter>Graphics\Camera\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshComponent.hpp">
+      <Filter>Graphics\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.hpp">
+      <Filter>Graphics\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformComponent.hpp">
+      <Filter>Graphics\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.hpp">
+      <Filter>Graphics\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\GLTexture.hpp">
+      <Filter>Graphics\Texture\OGL</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\D3DTexture.hpp">
+      <Filter>Graphics\Texture\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.hpp">
+      <Filter>Graphics\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\D3DIndexBuffer.hpp">
+      <Filter>Graphics\Renderer\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\D3DRenderer.hpp">
+      <Filter>Graphics\Renderer\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\D3DVertexBuffer.hpp">
+      <Filter>Graphics\Renderer\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\GLRenderer.hpp">
+      <Filter>Graphics\Renderer\OGL</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.hpp">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\Win32InputSystem.hpp">
+      <Filter>Input\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Mutex.hpp">
+      <Filter>Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.hpp">
+      <Filter>Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScreen.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIManager.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.hpp">
+      <Filter>UI\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="Panel.hpp">
+      <Filter>UI\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="Widget.hpp">
+      <Filter>UI\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptManager.hpp">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryFile.hpp">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="File.hpp">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="TextFile.hpp">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.hpp">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Fmod\FmodSound.hpp">
+      <Filter>Sound\Fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="Fmod\FmodSoundSystem.hpp">
+      <Filter>Sound\Fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="Vajra.Engine.hpp" />
+    <ClInclude Include="VideoManager.hpp">
+      <Filter>Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\Win32VideoSystem.hpp">
+      <Filter>Video\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager.hpp">
+      <Filter>Core\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="pugixml\pugixml.hpp">
+      <Filter>pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="pugixml\pugiconfig.hpp">
+      <Filter>pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtils.hpp">
+      <Filter>Core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\Keyboard.hpp">
+      <Filter>Input\Device\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\Mouse.hpp">
+      <Filter>Input\Device\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\Joystick.hpp">
+      <Filter>Input\Device\DirectX</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Exception.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Core\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\Win32Application.cpp">
+      <Filter>Core\Application\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="IdManager.cpp">
+      <Filter>Core\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource.cpp">
+      <Filter>Core\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Clock.cpp">
+      <Filter>Core\Timing</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>Core\Timing</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Core\Timing</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\Win32Clock.cpp">
+      <Filter>Core\Timing\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\Win32Timer.cpp">
+      <Filter>Core\Timing\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Core\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryManager.cpp">
+      <Filter>Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Graphics\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\D3DCamera.cpp">
+      <Filter>Graphics\Camera\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshComponent.cpp">
+      <Filter>Graphics\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Graphics\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformComponent.cpp">
+      <Filter>Graphics\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Graphics\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLTexture.cpp">
+      <Filter>Graphics\Texture\OGL</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\D3DTexture.cpp">
+      <Filter>Graphics\Texture\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Graphics\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\D3DIndexBuffer.cpp">
+      <Filter>Graphics\Renderer\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\D3DRenderer.cpp">
+      <Filter>Graphics\Renderer\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\D3DVertexBuffer.cpp">
+      <Filter>Graphics\Renderer\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\GLRenderer.cpp">
+      <Filter>Graphics\Renderer\OGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\Win32InputSystem.cpp">
+      <Filter>Input\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Mutex.cpp">
+      <Filter>Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScreen.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>UI\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Panel.cpp">
+      <Filter>UI\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget.cpp">
+      <Filter>UI\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptManager.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryFile.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="TextFile.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Fmod\FmodSound.cpp">
+      <Filter>Sound\Fmod</Filter>
+    </ClCompile>
+    <ClCompile Include="Fmod\FmodSoundSystem.cpp">
+      <Filter>Sound\Fmod</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoManager.cpp">
+      <Filter>Video</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\Win32VideoSystem.cpp">
+      <Filter>Video\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>Core\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="pugixml\pugixml.cpp">
+      <Filter>pugixml</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUtils.cpp">
+      <Filter>Core\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\Keyboard.cpp">
+      <Filter>Input\Device\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\Mouse.cpp">
+      <Filter>Input\Device\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\Joystick.cpp">
+      <Filter>Input\Device\DirectX</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
