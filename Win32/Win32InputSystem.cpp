@@ -42,11 +42,20 @@ void Win32InputSystem::Update( float delta )
 	InputManager::GetInputDevice(InputDevice::ID_JOYSTICK).Update( delta );
 
 	std::vector<int> keysPressed = InputManager::GetInputDevice(InputDevice::ID_KEYBOARD).GetPressedKeys();
-	for( std::vector<int>::const_iterator itr = keysPressed.begin(); itr != keysPressed.end(); itr++ )
+	for (int i = 0; i < keysPressed.size(); i++)
 	{
-		const int key = *itr;
-		Vajra::Input::InputSystem::Callback callback = KeyDownCallback(key);
-		if( callback != NULL )
+		Vajra::Input::InputSystem::Callback callback = KeyDownCallback(keysPressed[i]);
+		if (callback != NULL)
+		{
+			callback();
+		}
+	}
+
+	std::vector<int> buttonsPressed = InputManager::GetInputDevice(InputDevice::ID_MOUSE).GetPressedKeys();
+	for (int i = 0; i < buttonsPressed.size(); i++)
+	{
+		Vajra::Input::InputSystem::Callback callback = ButtonDownCallback(buttonsPressed[i]);
+		if (callback != NULL)
 		{
 			callback();
 		}

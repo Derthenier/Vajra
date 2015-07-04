@@ -14,7 +14,7 @@ namespace Vajra
     {
         enum InputKeys
         {
-            IK_A = 0x41,        IK_0 = 0x0B,	IK_NUMPAD_0,		IK_TAB,         IK_LBRACKET,
+            IK_A = 0x1E,        IK_0 = 0x0B,	IK_NUMPAD_0,		IK_TAB,         IK_LBRACKET,
             IK_B = 0x42,        IK_1 = 0x02,	IK_NUMPAD_1,		IK_LSHIFT,      IK_RBRACKET,
             IK_C = 0x43,        IK_2 = 0x03,	IK_NUMPAD_2,		IK_LCTRL,       IK_FWDSLASH,
             IK_D = 0x44,        IK_3 = 0x04,	IK_NUMPAD_3,		IK_LALT,        IK_COLON,
@@ -25,7 +25,7 @@ namespace Vajra
             IK_I = 0x49,        IK_8 = 0x09,	IK_NUMPAD_8,		IK_ENTER,
             IK_J = 0x4A,        IK_9 = 0x0A,	IK_NUMPAD_9,		IK_BACKSPACE,
             IK_K = 0x4B,        IK_F1 = 0x3B,	IK_NUMPAD_ENTER,	IK_TILDE,
-            IK_L = 0x4C,        IK_F2 = 0x3C,	IK_NUMPAD_DIVIDE,	IK_ESCAPE = 0x1B,
+            IK_L = 0x4C,        IK_F2 = 0x3C,	IK_NUMPAD_DIVIDE,	IK_ESCAPE = 0x01,
             IK_M = 0x4D,        IK_F3 = 0x3D,	IK_NUMPAD_MULTIPLY,	IK_INSERT,
             IK_N = 0x4E,        IK_F4 = 0x3E,	IK_NUMPAD_SUBTRACT,	IK_DELETE,
             IK_O = 0x4F,        IK_F5 = 0x3F,	IK_NUMPAD_ADD,		IK_HOME,

@@ -5,6 +5,7 @@ using Vajra::UI::UIManager;
 
 #include "Panel.hpp"
 #include "Button.hpp"
+#include "Text.hpp"
 #include "pugixml\pugixml.hpp"
 
 namespace Vajra
@@ -112,7 +113,10 @@ Vajra::UI::Widget* UIManager::Create( const std::string& name, Vajra::UI::Widget
         break;
 
 	case Vajra::UI::WT_Button:
-		return new Vajra::UI::Button(name);
+		return new Vajra::UI::Button( name );
+
+	case Vajra::UI::WT_Text:
+		return new Vajra::UI::Text( name );
 
     default:
         break;
@@ -141,6 +145,10 @@ std::vector< Vajra::UI::Widget* >& UIManager::GetWidgetsByType( std::vector< Vaj
 
 	case Vajra::UI::WT_Button:
 		widgetType = Vajra::UI::Button::Type();
+		break;
+
+	case Vajra::UI::WT_Text:
+		widgetType = Vajra::UI::Text::Type();
 		break;
     }
 

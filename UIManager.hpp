@@ -18,6 +18,7 @@ namespace Vajra
         {
             WT_Panel = 0,
 			WT_Button = 1,
+			WT_Text = 2,
 
 			WT_MAX_WIDGET_TYPES
         };

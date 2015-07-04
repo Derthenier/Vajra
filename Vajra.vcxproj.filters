@@ -283,6 +283,9 @@
     <ClInclude Include="DirectX\Joystick.hpp">
       <Filter>Input\Device\DirectX</Filter>
     </ClInclude>
+    <ClInclude Include="Text.hpp">
+      <Filter>UI\Widgets</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Exception.cpp">
@@ -434,6 +437,9 @@
     </ClCompile>
     <ClCompile Include="DirectX\Joystick.cpp">
       <Filter>Input\Device\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>UI\Widgets</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

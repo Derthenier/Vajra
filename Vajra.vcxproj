@@ -48,8 +48,8 @@
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">J:\boost_1_44_0;J:\Vajra\Libraries\include;J:\Microsoft\DirectX SDK\August 2009\Include;E:\FMOD SoundSystem\API Win32\api\inc;$(IncludePath)</IncludePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">J:\boost_1_44_0;J:\Vajra\Libraries\include;J:\Microsoft\DirectX SDK\August 2009\Include;E:\FMOD SoundSystem\API Win32\api\inc;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">J:\boost_1_44_0;J:\Vajra\Libraries\include;E:\FMOD SoundSystem\API Win32\api\inc;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">J:\boost_1_44_0;J:\Vajra\Libraries\include;E:\FMOD SoundSystem\API Win32\api\inc;$(IncludePath)</IncludePath>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -107,6 +107,7 @@
     <ClInclude Include="Singleton.hpp" />
     <ClInclude Include="Application.hpp" />
     <ClInclude Include="StringUtils.hpp" />
+    <ClInclude Include="Text.hpp" />
     <ClInclude Include="VideoManager.hpp" />
     <ClInclude Include="Win32\Win32Application.hpp" />
     <ClInclude Include="IdManager.hpp" />
@@ -162,6 +163,7 @@
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="pugixml\pugixml.cpp" />
     <ClCompile Include="StringUtils.cpp" />
+    <ClCompile Include="Text.cpp" />
     <ClCompile Include="VideoManager.cpp" />
     <ClCompile Include="Win32\Win32Application.cpp" />
     <ClCompile Include="IdManager.cpp" />

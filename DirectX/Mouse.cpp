@@ -53,14 +53,18 @@ void Mouse::Initialize()
 void Mouse::Update( float delta )
 {
 	std::memset((void*)&m_previousState, 0, sizeof(m_previousState));
-	std::memcpy(&m_previousState, &m_currentState, sizeof(m_currentState));
+	std::memcpy(&m_previousState, &m_currentState, sizeof(DIMOUSESTATE2));
 
-	HRESULT result = m_device->GetDeviceState(sizeof(m_currentState), (void **)&m_currentState);
+	HRESULT result = m_device->GetDeviceState(sizeof(DIMOUSESTATE2), (void *)&m_currentState);
 	if(FAILED(result))
 	{
 		if((result == DIERR_INPUTLOST) || (result == DIERR_NOTACQUIRED))
 		{
 			m_device->Acquire();
+			if (FAILED(result))
+			{
+				Vajra::Core::Logger::GetInstance().Write(Vajra::Core::LogInformation, "Unable to acquire mouse.");
+			}
 		}
 	}
 }
@@ -70,9 +74,18 @@ void Mouse::Poll(void)
 
 }
 
-int* Mouse::GetPressedButtons(void)
+std::vector<int> Mouse::GetPressedKeys(void)
 {
-	return 0;
+	std::vector<int> buttons;
+	for (int i = 0; i < 8; i++)
+	{
+		if (m_currentState.rgbButtons[i])
+		{
+			buttons.push_back(i);
+		}
+	}
+
+	return buttons;
 }
 
 bool Mouse::IsButtonDown( unsigned int button )
@@ -84,15 +97,15 @@ bool Mouse::IsButtonDown( unsigned int button )
 
 bool Mouse::IsButtonUp( unsigned int button )
 {
-	unsigned char prevResult = m_previousState.rgbButtons[button] & 0x80;
-	unsigned char curResult = m_currentState.rgbButtons[button] & 0x80;
+	unsigned char prevResult = m_previousState.rgbButtons[button];// &0x80;
+	unsigned char curResult = m_currentState.rgbButtons[button];// &0x80;
 	return !curResult && prevResult;
 }
 
 bool Mouse::IsButtonHeld( unsigned int button )
 {
-	unsigned char prevResult = m_previousState.rgbButtons[button] & 0x80;
-	unsigned char curResult = m_currentState.rgbButtons[button] & 0x80;
+	unsigned char prevResult = m_previousState.rgbButtons[button];// &0x80;
+	unsigned char curResult = m_currentState.rgbButtons[button];// &0x80;
 	return curResult && prevResult;
 }
 

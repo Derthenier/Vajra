@@ -27,18 +27,21 @@ void Keyboard::Initialize()
 		HRESULT result = input->CreateDevice(GUID_SysKeyboard, &m_device, NULL);
 		if(FAILED(result))
 		{
+			DEFINE_ERROR("Failed to create input device keyboard")
 			return;
 		}
 
 		result = m_device->SetDataFormat(&c_dfDIKeyboard);
 		if(FAILED(result))
 		{
+			DEFINE_ERROR("Failed to set data format keyboard")
 			return;
 		}
 
 		result = m_device->SetCooperativeLevel(app.GetAppWindow(), DISCL_FOREGROUND | DISCL_EXCLUSIVE);
 		if(FAILED(result))
 		{
+			DEFINE_ERROR("Failed to set cooperative level keyboard")
 			return;
 		}
 
@@ -60,7 +63,11 @@ void Keyboard::Update( float delta )
 	{
 		if((result == DIERR_INPUTLOST) || (result == DIERR_NOTACQUIRED))
 		{
-			m_device->Acquire();
+			result = m_device->Acquire();
+			if (FAILED(result))
+			{
+				Vajra::Core::Logger::GetInstance().Write(Vajra::Core::LogInformation, "Unable to acquire keyboard.");
+			}
 		}
 	}
 }
@@ -70,18 +77,17 @@ void Keyboard::Poll(void)
 
 }
 
-int* Keyboard::GetPressedKeys(int * keys)
+std::vector<int> Keyboard::GetPressedKeys(void)
 {
-	std::memset((void*)&keys, 0, 256);
-
-	for(int i = 0; i < 256; i++)
+	std::vector<int> keyState;
+	for (int i = 0; i < 256; i++)
 	{
-		if(IsKeyDown(i))
+		if (IsKeyDown(i))
 		{
-			keys[i] = 1;
+			keyState.push_back(i);
 		}
 	}
-	return keys;
+	return keyState;
 }
 
 bool Keyboard::IsKeyDown( unsigned int key )

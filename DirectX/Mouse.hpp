@@ -23,7 +23,7 @@ namespace Vajra
 				virtual void Initialize();
 				virtual void Update( float delta );
 
-				virtual int* GetPressedButtons(void);
+				virtual std::vector<int> GetPressedKeys(void);
 
 				virtual bool IsButtonDown( unsigned int button );
 				virtual bool IsButtonUp( unsigned int button );
