@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|Win32">
+    <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
-      <Platform>Win32</Platform>
+      <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|Win32">
+    <ProjectConfiguration Include="Release|x64">
       <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
+      <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -16,47 +16,47 @@
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">J:\boost_1_44_0;J:\Vajra\Libraries\include;E:\FMOD SoundSystem\API Win32\api\inc;$(IncludePath)</IncludePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">J:\boost_1_44_0;J:\Vajra\Libraries\include;E:\FMOD SoundSystem\API Win32\api\inc;$(IncludePath)</IncludePath>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_d</TargetName>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">J:\boost_1_44_0;J:\Vajra\Libraries\include;E:\FMOD SoundSystem\API x64\api\inc;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">J:\boost_1_44_0;J:\Vajra\Libraries\include;E:\FMOD SoundSystem\API x64\api\inc;$(IncludePath)</IncludePath>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)_d</TargetName>
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>J:\Vajra\version 2\Vajra;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>x64;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
@@ -69,12 +69,12 @@
       </AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>J:\Vajra\version 2\Vajra;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>x64;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -97,9 +97,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Definitions.hpp" />
-    <ClInclude Include="DirectX\Joystick.hpp" />
-    <ClInclude Include="DirectX\Keyboard.hpp" />
-    <ClInclude Include="DirectX\Mouse.hpp" />
     <ClInclude Include="EventManager.hpp" />
     <ClInclude Include="Exception.hpp" />
     <ClInclude Include="pugixml\pugiconfig.hpp" />
@@ -109,31 +106,22 @@
     <ClInclude Include="StringUtils.hpp" />
     <ClInclude Include="Text.hpp" />
     <ClInclude Include="VideoManager.hpp" />
-    <ClInclude Include="Win32\Win32Application.hpp" />
     <ClInclude Include="IdManager.hpp" />
     <ClInclude Include="Resource.hpp" />
     <ClInclude Include="Clock.hpp" />
     <ClInclude Include="TimeManager.hpp" />
     <ClInclude Include="Timer.hpp" />
-    <ClInclude Include="Win32\Win32Clock.hpp" />
-    <ClInclude Include="Win32\Win32Timer.hpp" />
     <ClInclude Include="Logger.hpp" />
     <ClInclude Include="MemoryManager.hpp" />
     <ClInclude Include="Camera.hpp" />
-    <ClInclude Include="DirectX\D3DCamera.hpp" />
     <ClInclude Include="MeshComponent.hpp" />
     <ClInclude Include="Object.hpp" />
     <ClInclude Include="TransformComponent.hpp" />
     <ClInclude Include="Texture.hpp" />
     <ClInclude Include="OpenGL\GLTexture.hpp" />
-    <ClInclude Include="DirectX\D3DTexture.hpp" />
     <ClInclude Include="Renderer.hpp" />
-    <ClInclude Include="DirectX\D3DIndexBuffer.hpp" />
-    <ClInclude Include="DirectX\D3DRenderer.hpp" />
-    <ClInclude Include="DirectX\D3DVertexBuffer.hpp" />
     <ClInclude Include="OpenGL\GLRenderer.hpp" />
     <ClInclude Include="InputSystem.hpp" />
-    <ClInclude Include="Win32\Win32InputSystem.hpp" />
     <ClInclude Include="Mutex.hpp" />
     <ClInclude Include="Thread.hpp" />
     <ClInclude Include="GameScreen.hpp" />
@@ -150,14 +138,10 @@
     <ClInclude Include="SoundManager.hpp" />
     <ClInclude Include="Fmod\FmodSound.hpp" />
     <ClInclude Include="Fmod\FmodSoundSystem.hpp" />
-    <ClInclude Include="Win32\Win32VideoSystem.hpp" />
     <CustomBuildStep Include="pch.hpp" />
     <ClInclude Include="Vajra.Engine.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DirectX\Joystick.cpp" />
-    <ClCompile Include="DirectX\Keyboard.cpp" />
-    <ClCompile Include="DirectX\Mouse.cpp" />
     <ClCompile Include="EventManager.cpp" />
     <ClCompile Include="Exception.cpp" />
     <ClCompile Include="Application.cpp" />
@@ -165,31 +149,22 @@
     <ClCompile Include="StringUtils.cpp" />
     <ClCompile Include="Text.cpp" />
     <ClCompile Include="VideoManager.cpp" />
-    <ClCompile Include="Win32\Win32Application.cpp" />
     <ClCompile Include="IdManager.cpp" />
     <ClCompile Include="Resource.cpp" />
     <ClCompile Include="Clock.cpp" />
     <ClCompile Include="TimeManager.cpp" />
     <ClCompile Include="Timer.cpp" />
-    <ClCompile Include="Win32\Win32Clock.cpp" />
-    <ClCompile Include="Win32\Win32Timer.cpp" />
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="MemoryManager.cpp" />
     <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="DirectX\D3DCamera.cpp" />
     <ClCompile Include="MeshComponent.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="TransformComponent.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="OpenGL\GLTexture.cpp" />
-    <ClCompile Include="DirectX\D3DTexture.cpp" />
     <ClCompile Include="Renderer.cpp" />
-    <ClCompile Include="DirectX\D3DIndexBuffer.cpp" />
-    <ClCompile Include="DirectX\D3DRenderer.cpp" />
-    <ClCompile Include="DirectX\D3DVertexBuffer.cpp" />
     <ClCompile Include="OpenGL\GLRenderer.cpp" />
     <ClCompile Include="InputSystem.cpp" />
-    <ClCompile Include="Win32\Win32InputSystem.cpp" />
     <ClCompile Include="Mutex.cpp" />
     <ClCompile Include="Thread.cpp" />
     <ClCompile Include="GameScreen.cpp" />
@@ -205,7 +180,6 @@
     <ClCompile Include="SoundManager.cpp" />
     <ClCompile Include="Fmod\FmodSound.cpp" />
     <ClCompile Include="Fmod\FmodSoundSystem.cpp" />
-    <ClCompile Include="Win32\Win32VideoSystem.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

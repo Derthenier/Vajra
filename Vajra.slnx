@@ -1,0 +1,13 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Release" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path=".gitattributes" />
+  </Folder>
+  <Project Path="Vajra/Vajra.vcxproj" Id="C4B855F9-CEF8-4E35-946D-17B30D7AE3A5">
+  </Project>
+</Solution>
